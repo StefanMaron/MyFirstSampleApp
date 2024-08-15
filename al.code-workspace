@@ -7,5 +7,17 @@
       "path": ".AL-Go"
     }
   ],
-  "settings": {}
+  "settings": {
+    "al.enableExternalRulesets": true,
+    "al.ruleSetPath": "../custom.ruleset.json",
+    "al.codeAnalyzers": [
+      "${CodeCop}",
+      "${UICop}",
+      "${PerTenantExtensionCop}",
+      "${AppSourceCop}",
+      "${analyzerFolder}BusinessCentral.LinterCop.dll"
+    ],
+    "al.enableCodeAnalysis": true,
+    "al.backgroundCodeAnalysis": "Project",
+  }
 }

@@ -1,6 +1,26 @@
 {
   "country": "us",
-  "appFolders": [],
+  "appFolders": [
+    "Sample App"
+  ],
   "testFolders": [],
-  "bcptTestFolders": []
+  "bcptTestFolders": [],
+  "appSourceCopMandatoryAffixes": [
+    "SMC"
+  ],
+  "enableAppSourceCop": true,
+  "enableExternalRulesets": true,
+  "rulesetFile": "custom.ruleset.json",
+  "environments": [
+    "QA",
+    "PROD"
+  ],
+  "DeployToQA": {
+    "EnvironmentName": "QA",
+    "ContinuousDeployment": true
+  },
+  "DeployToPROD": {
+    "EnvironmentName": "Production",
+    "ContinuousDeployment": false
+  }
 }
